@@ -2,11 +2,11 @@ import React from 'react';
 import {NavLink} from 'react-router-dom';
 
 const Menu = () => {
-    return(
+    return (
         <>
-        <NavLink activeClassName="active_class" exact to="/"> Home </NavLink>
-        <NavLink activeClassName="active_class" exact to="/about"> About Us </NavLink>
-        <NavLink activeClassName="active_class" exact to="/contact"> Contact Us </NavLink>
+        <NavLink exact activeClassName="active_class" to="/"> Home </NavLink>
+        <NavLink exact activeClassName="active_class" to="/about"> About Us </NavLink>
+        <NavLink exact activeClassName="active_class" to="/contact"> Contact Us </NavLink>
         </>
     );
 }
