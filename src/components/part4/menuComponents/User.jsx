@@ -10,9 +10,9 @@ const User = () => {
         <>
         <h1>This is {fname} {lname} Page</h1>
         <h2>My Current Location is {location.pathname}</h2>
-        {location.pathname === '/user/raju/tamang' ? (<button onClick={() => {history.goBack()}} >Go Back</button>  ) : null } 
+        {location.pathname === '/user/yangi/sherpa' ? (<button onClick={() => {history.goBack()}} >Go Back</button>  ) : null } 
         <br/>
-        {location.pathname === '/user/raju/tamang' ? (<button onClick={() => {history.push("/")}} >Back Home</button>  ) : null }
+        {location.pathname === '/user/hari/tamang' ? (<button onClick={() => {history.push("/")}} >Back Home</button>  ) : null }
         </>
     );
 }

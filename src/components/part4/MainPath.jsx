@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, Switch} from 'react-router-dom';
+import {Route, Switch, Redirect} from 'react-router-dom';
 import Main from './menuComponents/Main';
 import About from './menuComponents/About';
 import Contact from "./menuComponents/Contact";
@@ -17,7 +17,8 @@ const MainPath = () => {
             <Route exact path="/user" component={User}/>
             <Route exact path="/user/:fname/:lname" component={User}/>
             <Route exact path="/contact" render={() => <Contact name="contact"/>}  />
-            <Route component={ErrorComp}/>
+            {/* <Route component={ErrorComp}/> */}
+            <Redirect to="/"/>
         </Switch>
         </>
     );
