@@ -1,6 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
 a.active_class{
     color: #ff0101;
 }
 body{
     font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.secGap{
+    padding: 30px 0;
 }
