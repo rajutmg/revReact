@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/revReact/static/css/main.efa617fd.chunk.css",
-    "main.js": "/revReact/static/js/main.cebfd79a.chunk.js",
-    "main.js.map": "/revReact/static/js/main.cebfd79a.chunk.js.map",
+    "main.css": "/revReact/static/css/main.717a1550.chunk.css",
+    "main.js": "/revReact/static/js/main.04f77664.chunk.js",
+    "main.js.map": "/revReact/static/js/main.04f77664.chunk.js.map",
     "runtime-main.js": "/revReact/static/js/runtime-main.96b879ab.js",
     "runtime-main.js.map": "/revReact/static/js/runtime-main.96b879ab.js.map",
-    "static/js/2.8e0a7593.chunk.js": "/revReact/static/js/2.8e0a7593.chunk.js",
-    "static/js/2.8e0a7593.chunk.js.map": "/revReact/static/js/2.8e0a7593.chunk.js.map",
+    "static/js/2.5cde7e9a.chunk.js": "/revReact/static/js/2.5cde7e9a.chunk.js",
+    "static/js/2.5cde7e9a.chunk.js.map": "/revReact/static/js/2.5cde7e9a.chunk.js.map",
     "index.html": "/revReact/index.html",
-    "static/css/main.efa617fd.chunk.css.map": "/revReact/static/css/main.efa617fd.chunk.css.map",
-    "static/js/2.8e0a7593.chunk.js.LICENSE.txt": "/revReact/static/js/2.8e0a7593.chunk.js.LICENSE.txt"
+    "static/css/main.717a1550.chunk.css.map": "/revReact/static/css/main.717a1550.chunk.css.map",
+    "static/js/2.5cde7e9a.chunk.js.LICENSE.txt": "/revReact/static/js/2.5cde7e9a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.96b879ab.js",
-    "static/js/2.8e0a7593.chunk.js",
-    "static/css/main.efa617fd.chunk.css",
-    "static/js/main.cebfd79a.chunk.js"
+    "static/js/2.5cde7e9a.chunk.js",
+    "static/css/main.717a1550.chunk.css",
+    "static/js/main.04f77664.chunk.js"
   ]
 }
