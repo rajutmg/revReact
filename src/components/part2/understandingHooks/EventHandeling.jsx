@@ -4,7 +4,6 @@ const EventHandeling = () => {
     let bgColor = '#000';
     const[newColor, updateColor] = useState(bgColor);
     const[newText, updateText] = useState('HoverMe');
-
     const newBg = () => {
         let newBack = "#999";
         updateColor(newBack);

@@ -8,7 +8,9 @@ const flexDiv = {
     marginLeft: '20px',
 }
 
+
 const DoList = (props) => {
+    console.log(props);
     return (
         <>
         <div style={{ display: 'flex', 

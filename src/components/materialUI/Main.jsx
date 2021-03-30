@@ -14,6 +14,8 @@ import Paper from '@material-ui/core/Paper';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Hidden from '@material-ui/core/Hidden';
 import GridGal from './components/GridGal';
+import Drawer from './components/Drawer';
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -165,6 +167,7 @@ const Main = () => {
       </Paper>
         </section>
         <GridGal/>
+        <Drawer/>
         </>
     );
 }

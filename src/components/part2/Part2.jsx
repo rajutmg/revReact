@@ -9,7 +9,7 @@ const Part2 = () => {
         {/* <Hooks/> */}
         {/* <EventHandeling/> */}
         {/* <Form/> */}
-        <ToDo/>
+        {/* <ToDo/> */}
         </>
     )
 }

@@ -7,6 +7,9 @@ const FormWithSpreadOperator = () => {
       lname: "",
       phone: "",
       email: "",
+      asd:{
+        name:"asda"
+      }
   });
 
   const inputEvent = (event) => {

@@ -4,6 +4,7 @@ import Part2 from './components/part2/Part2';
 import Part3 from './components/part3/Part3';
 import Mainpath from './components/part4/MainPath';
 import Main from './components/materialUI/Main';
+import Overall from './components/Overall';
 function App() {
   return (
     <div className="App">
@@ -11,7 +12,8 @@ function App() {
     {/* <Part2/> */}
     {/* <Part3/> */}
     {/* <Mainpath/> */}
-    <Main/>
+    {/* <Main/> */}
+    <Overall/>
     </div>
   );
 }
