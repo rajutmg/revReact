@@ -5,6 +5,7 @@ const User = () => {
     const {fname, lname} = useParams();
     const location = useLocation();
     const history = useHistory();
+    console.log(history);
     console.log(location);
     return(
         <>

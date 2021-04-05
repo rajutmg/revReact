@@ -6,9 +6,9 @@ import MainAPI from './api/MainAPI';
 const Part3 = () => {
     return(
         <>
-        <ContextAPI/>
+        {/* <ContextAPI/> */}
         {/* <UseEffect/> */}
-        {/* <MainAPI/> */}
+        <MainAPI/>
         </>
     );
 } 

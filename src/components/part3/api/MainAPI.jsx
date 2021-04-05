@@ -5,6 +5,9 @@ const MainAPI = () => {
     const [num, setnum] = useState();
     const [name, setname] = useState();
     const [moves, setmoves] = useState();
+
+    const [greey, setGreet] = useState();
+
     useEffect(() => {
         async function getData(){
             const res = await axios.get(`https://pokeapi.co/api/v2/pokemon/${num}`);
@@ -14,7 +17,7 @@ const MainAPI = () => {
             setmoves(res.data.moves.length);
         }
         getData();
-    },)
+    },[num])
     return(
         <>
         <h1>You choose  {num}  value <br/> My name is {name} <br/> I have {moves} moves</h1>
@@ -31,7 +34,10 @@ const MainAPI = () => {
             <option value="9">9</option>
             <option value="10">10</option>
         </select>
+
+        <button onClick={(e)=>setGreet(Math.random())}>hello</button>
         </>
+
     );
 }
 
