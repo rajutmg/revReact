@@ -15,6 +15,7 @@ const BasicTable = () => {
     getTableProps,
     getTableBodyProps,
     headerGroups,
+    footerGroups,
     rows,
     prepareRow,
   } = tableInstance;
@@ -27,7 +28,6 @@ const BasicTable = () => {
               {headerGroups.headers.map((column) => (
                 <th {...column.getHeaderProps()}> {column.render("Header")}</th>
               ))}
-              <th></th>
             </tr>
           ))}
         </thead>
@@ -45,6 +45,15 @@ const BasicTable = () => {
             );
           })}
         </tbody>
+        <tfoot>
+          {footerGroups.map((footerGroups) => (
+            <tr {...footerGroups.getFooterGroupProps()}>
+              {footerGroups.headers.map((column) => (
+                <td {...column.getHeaderProps()}> {column.render("Header")}</td>
+              ))}
+            </tr>
+          ))}
+        </tfoot>
       </table>
     </>
   );
