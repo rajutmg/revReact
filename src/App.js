@@ -6,6 +6,9 @@ import Mainpath from "./components/part4/MainPath";
 import Main from "./components/materialUI/Main";
 import Overall from "./components/Overall";
 import BasicTable from "./components/reacTable/BasicTable";
+import SortingTable from "./components/reacTable/SortingTable";
+import FilteringTable from "./components/reacTable/FilteringTable";
+import PaginationTable from "./components/reacTable/PaginationTable";
 function App() {
   return (
     <div className="App">
@@ -15,7 +18,10 @@ function App() {
       {/* <Mainpath/> */}
       {/* <Main/> */}
       {/* <Overall/> */}
-      <BasicTable />
+      {/* <BasicTable /> */}
+      {/* <SortingTable /> */}
+      {/* <FilteringTable /> */}
+      <PaginationTable />
     </div>
   );
 }
