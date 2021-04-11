@@ -12,6 +12,7 @@ const PaginationTable = () => {
     {
       columns,
       data,
+      initialState: { pageIndex: 0 },
     },
     usePagination
   );
@@ -24,8 +25,14 @@ const PaginationTable = () => {
     previousPage,
     canNextPage,
     canPreviousPage,
+    pageOptions,
+    gotoPage,
+    pageCount,
+    setPageSize,
+    state,
     prepareRow,
   } = tableInstance;
+  const { pageIndex, pageSize } = state;
   return (
     <>
       <table {...getTableProps()}>
@@ -54,11 +61,47 @@ const PaginationTable = () => {
         </tbody>
       </table>
       <div>
+        <span>
+          Page{""}
+          <strong>
+            {pageIndex + 1} of {pageOptions.length}
+          </strong>{" "}
+        </span>
+        <span>
+          Go to page: {""}
+          <input
+            type="number"
+            defaultValue={pageIndex + 1}
+            onChange={(e) => {
+              const pageNumber = e.target.value
+                ? Number(e.target.value) - 1
+                : 0;
+              gotoPage(pageNumber);
+            }}
+            style={{ width: "50px" }}
+          />
+        </span>
+        <select
+          value={pageSize}
+          onChange={(e) => setPageSize(Number(e.target.value))}
+        >
+          {[10, 15, 25, 50].map((pageSize) => (
+            <option key={pageSize} value={pageSize}>
+              show {pageSize}
+            </option>
+          ))}
+        </select>
+        <button onClick={() => gotoPage(0)} disabled={!canPreviousPage}>
+          {"<<"}
+        </button>
         <button onClick={() => previousPage()} disabled={!canPreviousPage}>
           Previous
         </button>
         <button onClick={() => nextPage()} disabled={!canNextPage}>
           Next
+        </button>
+        <button onClick={() => gotoPage(pageCount - 1)} disabled={!canNextPage}>
+          {"<<"}
         </button>
       </div>
     </>
