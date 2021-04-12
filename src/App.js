@@ -9,6 +9,9 @@ import BasicTable from "./components/reacTable/BasicTable";
 import SortingTable from "./components/reacTable/SortingTable";
 import FilteringTable from "./components/reacTable/FilteringTable";
 import PaginationTable from "./components/reacTable/PaginationTable";
+import RowSelection from "./components/reacTable/RowSelection";
+import ColumnOrder from "./components/reacTable/ColumnOrder";
+import StickyTable from "./components/reacTable/StickyTable";
 function App() {
   return (
     <div className="App">
@@ -21,7 +24,10 @@ function App() {
       {/* <BasicTable /> */}
       {/* <SortingTable /> */}
       {/* <FilteringTable /> */}
-      <PaginationTable />
+      {/* <PaginationTable /> */}
+      {/* <RowSelection /> */}
+      {/* <ColumnOrder /> */}
+      <StickyTable />
     </div>
   );
 }

@@ -8,18 +8,21 @@ const COLUMN = [
     accessor: "id",
     // Filter: ColumnFilter,
     disableFilters: true,
+    sticky: "left",
   },
   {
     Header: "First Name",
     Footer: "first_name",
     accessor: "first_name",
     // Filter: ColumnFilter,
+    sticky: "left",
   },
   {
     Header: "Last Name",
     Footer: "last_name",
     accessor: "last_name",
     // Filter: ColumnFilter,
+    sticky: "left",
   },
   {
     Header: "Date of birth",
@@ -40,6 +43,18 @@ const COLUMN = [
     Header: "Phone",
     Footer: "Phone",
     accessor: "phone",
+    // Filter: ColumnFilter,
+  },
+  {
+    Header: "Email",
+    Footer: "Email",
+    accessor: "email",
+    // Filter: ColumnFilter,
+  },
+  {
+    Header: "Age",
+    Footer: "Age",
+    accessor: "age",
     // Filter: ColumnFilter,
   },
 ];
