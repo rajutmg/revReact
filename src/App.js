@@ -12,6 +12,7 @@ import PaginationTable from "./components/reacTable/PaginationTable";
 import RowSelection from "./components/reacTable/RowSelection";
 import ColumnOrder from "./components/reacTable/ColumnOrder";
 import StickyTable from "./components/reacTable/StickyTable";
+import L_axios from "./components/axiosLearn/Main";
 function App() {
   return (
     <div className="App">
@@ -27,7 +28,8 @@ function App() {
       {/* <PaginationTable /> */}
       {/* <RowSelection /> */}
       {/* <ColumnOrder /> */}
-      <StickyTable />
+      {/* <StickyTable /> */}
+      <L_axios />
     </div>
   );
 }
