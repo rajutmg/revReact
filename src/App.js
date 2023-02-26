@@ -18,9 +18,9 @@ function App() {
     <div className="App">
       {/* <Part1/> */}
       {/* <Part2/> */}
-      {/* <Part3/> */}
-      {/* <Mainpath/> */}
-      {/* <Main/> */}
+      <Part3 />
+      {/* <Mainpath /> */}
+      {/* <Main /> */}
       {/* <Overall/> */}
       {/* <BasicTable /> */}
       {/* <SortingTable /> */}
@@ -29,7 +29,7 @@ function App() {
       {/* <RowSelection /> */}
       {/* <ColumnOrder /> */}
       {/* <StickyTable /> */}
-      <L_axios />
+      {/* <L_axios /> */}
     </div>
   );
 }
